@@ -13,6 +13,9 @@ public class Main {
         fileName = myScanner.nextLine();
         String theText = myScanner.nextLine();
         theFile.addTextToFile(fileName, theText);
+        System.out.println("give the name of the file you would like to be read");
+        fileName = myScanner.nextLine();
+        System.out.println(theFile.readFile(fileName));
 
     }
 }
